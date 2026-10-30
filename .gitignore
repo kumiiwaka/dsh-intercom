@@ -1,0 +1,5 @@
+node_modules/
+*.bak-*
+registry.json
+messages.jsonl
+*.log

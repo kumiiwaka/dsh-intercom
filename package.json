@@ -1,0 +1,32 @@
+{
+  "name": "dsh-intercom",
+  "version": "0.3.0",
+  "private": true,
+  "description": "窗口总线：一个窗口给另一个窗口投递消息（bus_send）。底层用官方 sessionController.prompt 的 steer / queue 两种投递模式。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "bus",
+    "window"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

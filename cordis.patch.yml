@@ -1,0 +1,10 @@
+# dsh-intercom bundle patch
+#
+# 本包通过 link 装进 profile 后，dsh 启动时自动加载这个 patch，
+# 把插件行 insert 进组合树。
+#
+# 叠加顺序：dsh-base → 本 bundle patch → profile cordis.patch.yml → --patch
+
+- insert:
+    - id: intercom
+      name: 'dsh-intercom'
