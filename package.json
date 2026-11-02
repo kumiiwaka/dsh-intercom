@@ -10,7 +10,8 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "cordis.patch.yml"
   ],
   "license": "MIT",
   "keywords": [
